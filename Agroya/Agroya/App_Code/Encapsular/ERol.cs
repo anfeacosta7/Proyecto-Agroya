@@ -14,4 +14,6 @@ public class ERol
     public int Id { get => id; set => id = value; }
     [Column("nombre")]
     public string Nombre { get => nombre; set => nombre = value; }
+
+    public string bobo = null;
 }
