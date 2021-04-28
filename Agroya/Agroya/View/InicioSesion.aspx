@@ -18,13 +18,7 @@
             width: 34%;
             text-align: center;
         }
-        .auto-style34 {
-            height: 24px;
-        }
-        .auto-style35 {
-            height: 22px;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style1">
@@ -44,12 +38,12 @@
                 <asp:Login ID="LN_Principal" runat="server" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" OnAuthenticate="Login1_Authenticate" style="font-size: medium">
                     <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
                     <LayoutTemplate>
-                        <table cellpadding="4" cellspacing="0" style="border-collapse:collapse;">
+                        <table style="cellpadding= "4";  cellspacing="0""; style="border-collapse:collapse;">
                             <tr>
                                 <td>
                                     <table cellpadding="0">
                                         <tr>
-                                            <td align="center" colspan="2" style="color:White;background-color:#5D7B9D;font-size:0.9em;font-weight:bold;">Iniciar sesión</td>
+                                            <td align="center" colspan="2" style="color:White;background-color:#18774A;font-size:0.9em;font-weight:bold;">Iniciar sesión</td>
                                         </tr>
                                         <tr>
                                             <td align="right">
@@ -71,17 +65,17 @@
                                         </tr>
                                         <tr>
                                             <td colspan="2">
-                                                <asp:CheckBox ID="RememberMe" runat="server" Text="Recordármelo la próxima vez." />
+                                                <asp:HyperLink ID="HP_Link" runat="server">Olvide mi contraseña</asp:HyperLink>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" colspan="2" style="color:Red;">
+                                            <td align="center" colspan="2" style="color:Red; font-size: small;">
                                                 <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td align="right" colspan="2">
-                                                <asp:Button ID="LoginButton" runat="server" BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" CommandName="Login" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" Text="Inicio de sesión" ValidationGroup="LN_Principal" />
+                                                <asp:Button ID="LoginButton" runat="server" BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" CommandName="Login" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" Text="Inicio de sesión" ValidationGroup="LN_Principal" style="font-size: small" />
                                             </td>
                                         </tr>
                                     </table>
