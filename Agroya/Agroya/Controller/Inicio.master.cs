@@ -14,6 +14,6 @@ public partial class View_Inicio : System.Web.UI.MasterPage
 
     protected void B_InicioSesion_Click(object sender, EventArgs e)
     {
-        Response.Redirect("InicioSesion.aspx");
+        Response.Redirect("Login.aspx");
     }
 }
